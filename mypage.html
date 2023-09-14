@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dramatic Bootstrap Web Page</title>
+    <!-- Include Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom CSS for the page */
+        body {
+            background-color: #333; /* Dark background color */
+            color: #fff; /* White text color */
+        }
+        .navbar.navbar-expand-lg.navbar-dark.bg-primary {
+            background-color: #1b2530 !important; /* Updated navbar background color */
+        }
+        .container {
+            background-color: #444; /* Dark container background color */
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+        }
+        .card {
+            border: none;
+            transition: transform 0.2s;
+            background-color: #555; /* Dark card background color */
+        }
+        .card:hover {
+            transform: scale(1.02);
+        }
+        .card-img-top {
+            max-height: 200px;
+            object-fit: cover;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        /* Style the buttons with a contrasting color */
+        .btn-primary {
+            background-color: #ff5733; /* Orange button background */
+            border-color: #ff5733; /* Orange button border */
+        }
+        .btn-primary:hover {
+            background-color: #ff7f50; /* Darker orange on hover */
+            border-color: #ff7f50; /* Darker orange border on hover */
+        }
+        /* Footer styles */
+        footer {
+            background-color: #1b2530; /* Dark background color for the footer */
+            padding: 20px 0;
+            color: #fff; /* White text color for the footer */
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">My Dramatic Website</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content Section -->
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Welcome to My Dramatic Website</h1>
+        <div class="row">
+            <!-- Card 1 - Google -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200?text=Google" alt="Google" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Google</h5>
+                        <a href="https://www.google.com" class="btn btn-primary" target="_blank">Go to Google</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 - Facebook -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200?text=Facebook" alt="Facebook" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Facebook</h5>
+                        <a href="https://www.facebook.com" class="btn btn-primary" target="_blank">Go to Facebook</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 - Instagram -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200?text=Instagram" alt="Instagram" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Instagram</h5>
+                        <a href="https://www.instagram.com" class="btn btn-primary" target="_blank">Go to Instagram</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Login and Sign Up Form -->
+        <div class="row mt-5">
+            <div class="col-md-6 offset-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Login or Sign Up</h5>
+                        <form>
+                            <div class="form-group">
+                                <label for="email">Email address</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" class="form-control" id="password" placeholder="Enter your password">
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary">Login</button>
+                                <a href="signup.html" class="btn btn-primary" target="_blank">Sign Up</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 My Dramatic Website</p>
+    </footer>
+
+    <!-- Include Bootstrap JS (optional) -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
